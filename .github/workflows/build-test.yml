@@ -1,0 +1,21 @@
+name: test-build
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/*
+      - release/*
+      - support/*
+      - hotfix/*
+    paths:
+     - src/**
+     - build/**
+     - .github/workflows/build-test.yml
+  pull_request:
+  workflow_dispatch:
+  
+jobs:
+  call-workflow:
+    uses: JimIBrown/actions-workflows/.github/workflows/package-nuget.yml@main

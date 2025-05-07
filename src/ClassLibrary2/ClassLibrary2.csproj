@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<VersionPrefix></VersionPrefix>
+	<VersionSuffix></VersionSuffix>
+	<PackageVersion></PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClassLibrary1" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
