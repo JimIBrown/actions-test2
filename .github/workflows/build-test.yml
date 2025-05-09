@@ -19,3 +19,5 @@ on:
 jobs:
   call-workflow:
     uses: JimIBrown/actions-workflows/.github/workflows/package-nuget.yml@main
+    with:
+      buildType: 'package'
