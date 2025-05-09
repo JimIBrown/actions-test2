@@ -18,6 +18,7 @@ on:
   
 jobs:
   call-workflow:
-    uses: JimIBrown/actions-workflows/.github/workflows/package-nuget.yml@main
+    uses: JimIBrown/actions-workflows/.github/workflows/docker-image.yml@main
     with:
-      buildType: 'package'
+      dockerRepo: 'DOCKER_REPO'
+      projectName: 'ClassLibrary2'
